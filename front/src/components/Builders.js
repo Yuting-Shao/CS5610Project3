@@ -21,7 +21,7 @@ function Builders() {
         ? Builder.map((item) => (
             <li key={item._id}>
               {item.builder} has built {item.universe.length} unvierses, which
-              are listed as following: {item.universe}
+              are listed as following: {item.universe.toString()}
             </li>
           ))
         : null}

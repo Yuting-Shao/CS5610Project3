@@ -77,42 +77,49 @@ router.post("/listings/record", async function (req, res, next) {
   };
   if (matchDocument.dist_value === false) {
     if (matchDocument.gravity_value === true) {
-      matchDocument.Final = "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
+      matchDocument.Final =
+        "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
     } else {
-      matchDocument.Final = "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
+      matchDocument.Final =
+        "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
     }
   } else {
     if (matchDocument.gravity_value === true) {
-      matchDocument.Final = "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
+      matchDocument.Final =
+        "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
     } else {
       if (
         matchDocument.N_value <= 0 ||
         matchDocument.O_value <= 2 ||
         matchDocument.Cell_value <= 2
       ) {
-        matchDocument.Final = "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
+        matchDocument.Final =
+          "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
       } else {
         if (
           matchDocument.mitosis_value >= 3 &&
           matchDocument.mitochondria_value > 2 &&
           matchDocument.nucleus_value > 0
         ) {
-          matchDocument.Final = "This planet is just like earth. Congratulations! Commander!";
+          matchDocument.Final =
+            "This planet is just like earth. Congratulations! Commander!";
         } else if (
           matchDocument.nucleus_value > 0 &&
           matchDocument.mitochondria_value > 2 &&
           matchDocument.mitosis_value < 3
         ) {
-          matchDocument.Final = "This planet has stable energy and nutrient flow within its environment, however, due to lack of sexual reproduction, the species dominates this planet is plants.";
+          matchDocument.Final =
+            "This planet has stable energy and nutrient flow within its environment, however, due to lack of sexual reproduction, the species dominates this planet is plants.";
         } else {
-          matchDocument.Final = "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
+          matchDocument.Final =
+            "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
         }
       }
     }
   }
   const matchDocument2 = {
     builder: req.body.builder,
-    universe: req.body.name
+    universe: req.body.name,
   };
   try {
     await myDB.insertUniverse(matchDocument);
@@ -142,35 +149,42 @@ router.post("/listings/update", async function (req, res, next) {
   };
   if (matchDocument.dist_value === false) {
     if (matchDocument.gravity_value === true) {
-      matchDocument.Final = "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
+      matchDocument.Final =
+        "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
     } else {
-      matchDocument.Final = "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
+      matchDocument.Final =
+        "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
     }
   } else {
     if (matchDocument.gravity_value === true) {
-      matchDocument.Final = "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
+      matchDocument.Final =
+        "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
     } else {
       if (
         matchDocument.N_value <= 0 ||
         matchDocument.O_value <= 2 ||
         matchDocument.Cell_value <= 2
       ) {
-        matchDocument.Final = "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
+        matchDocument.Final =
+          "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
       } else {
         if (
           matchDocument.mitosis_value >= 3 &&
           matchDocument.mitochondria_value > 2 &&
           matchDocument.nucleus_value > 0
         ) {
-          matchDocument.Final = "This planet is just like earth. Congratulations! Commander!";
+          matchDocument.Final =
+            "This planet is just like earth. Congratulations! Commander!";
         } else if (
           matchDocument.nucleus_value > 0 &&
           matchDocument.mitochondria_value > 2 &&
           matchDocument.mitosis_value < 3
         ) {
-          matchDocument.Final = "This planet has stable energy and nutrient flow within its environment, however, due to lack of sexual reproduction, the species dominates this planet is plants.";
+          matchDocument.Final =
+            "This planet has stable energy and nutrient flow within its environment, however, due to lack of sexual reproduction, the species dominates this planet is plants.";
         } else {
-          matchDocument.Final = "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
+          matchDocument.Final =
+            "This planet has suitable chemical compounds, water, and protection from ozone layer ensured an ideal environment for life.";
         }
       }
     }
