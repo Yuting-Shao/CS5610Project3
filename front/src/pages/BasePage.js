@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 
 import NavBar from "./NavBar.js";
 import Footer from "./Footer.js";
+import "./BasePage.css";
 
 function BasePage({children}) {
     return (
         <div className="BasePage">
             <NavBar></NavBar>
-            <main>{children}</main>
+            <main className="content">{children}</main>
             <Footer></Footer>
         </div>
     );
