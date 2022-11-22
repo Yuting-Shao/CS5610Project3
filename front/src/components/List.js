@@ -6,7 +6,7 @@ function List() {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
-    fetch("https://stellaris-api.onrender.com/listings")
+    fetch("/listings")
       .then((res) => {
         return res.json();
       })
