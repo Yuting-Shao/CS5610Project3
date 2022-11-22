@@ -1,7 +1,7 @@
 # CS5610Project3
-60% finished version
-# Stellaris(60%)
-Currently working on intergrating html to the react
+100% finished version
+# Stellaris(100%)
+Public link: [https://stellaris3.herokuapp.com/](https://stellaris3.herokuapp.com/)
 
 In 2077, human has explored all planets in Oort cloud. They owned the technology to manage a global ecosystem of a just explored planet. 
   United Nation wonder if we can simulate the operation result of exploiting a given planet.
