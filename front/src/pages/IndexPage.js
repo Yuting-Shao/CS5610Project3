@@ -12,7 +12,7 @@ function IndexPage() {
         <h1>Welcome to Stellaris!</h1>
         <div>
           <p>
-            In 2077, human has explored all planets in Oort cloud. They owned
+            In year 2077, human has explored all planets in Oort cloud. They owned
             the technology to manage a global ecosystem of a just explored
             planet. United Nation wonder if we can simulate the operation result
             of exploiting a given planet. Therefore, they hired 79 years old
