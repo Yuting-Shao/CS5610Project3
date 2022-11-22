@@ -8,10 +8,10 @@
     width: 300px;
 }
 
-#IndexPage{
+.IndexPage{
     background-image: url("../images/image0.gif");
     background-size: 100%;
     background-repeat: no-repeat;
     color: #fff;
-    padding-top: 5%;
+    padding-top: 20%;
 }
