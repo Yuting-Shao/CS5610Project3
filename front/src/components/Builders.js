@@ -6,7 +6,7 @@ function Builders() {
   const [Builder, setBuilder] = useState([]);
 
   useEffect(() => {
-    fetch("/builders")
+    fetch("https://stellaris-api.onrender.com/builders")
       .then((res) => {
         return res.json();
       })

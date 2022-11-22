@@ -32,7 +32,7 @@ async function handleBuild(
       mitosis:mitosis_value
     }),
   };
-  fetch("/listings/record", requestOptions)
+  fetch("https://stellaris-api.onrender.com/listings/record", requestOptions)
     .then(async (response) => response.json())
     .then((result) => {
       console.log(result);
@@ -67,7 +67,7 @@ async function handleUpdate(
         mitosis: mitosis_value
       }),
     };
-    fetch("/listings/update", requestOptions)
+    fetch("https://stellaris-api.onrender.com/listings/update", requestOptions)
       .then(async (response) => response.json())
       .then((result) => {
         console.log(result);
@@ -86,7 +86,7 @@ async function handleDelete(
         builder:Builder_name
       }),
     };
-    fetch("/listings/delete", requestOptions)
+    fetch("https://stellaris-api.onrender.com/listings/delete", requestOptions)
       .then(async (response) => response.json())
       .then((result) => {
         console.log(result);
