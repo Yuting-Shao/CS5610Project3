@@ -130,9 +130,13 @@ function BuildPage() {
               />
             </label>
           </form>
+          <h3>Click to modify CO2 level:</h3>
+          <p>Carbon dioxide generated from ancient volcano warms this planet. And further generate Ozone layer to protect life.</p>
           <Element name="CO2" initialValue={N_value} />
           <button onClick={() => setNValue(N_value + 1)}>Increase CO2</button>
           <button onClick={() => setNValue(N_value - 1)}>Decrease CO2</button>
+          <h3>Click to modify Amino Acid level:</h3>
+          <p>Atoms react with moleculars to form the amino acid, as an organic compunds, amino acid combined together to form protein.</p>
           <Element name="Amino Acid" initialValue={O_value} />
           <button onClick={() => setOValue(O_value + 1)}>
             Increase Amino Acid
@@ -140,6 +144,8 @@ function BuildPage() {
           <button onClick={() => setOValue(O_value - 1)}>
             Decrease Amino Acid
           </button>
+          <h3>Click to modify Nucleotide level:</h3>
+          <p>Nucleotide is the keystone element to construct DNA and RNA, ususally formed at prebiotic soup step.</p>
           <Element name="Nucleotide" initialValue={Cell_value} />
           <button onClick={() => setCellValue(Cell_value + 1)}>
             Increase Nucleotide
@@ -147,6 +153,8 @@ function BuildPage() {
           <button onClick={() => setCellValue(Cell_value - 1)}>
             Decrease Nucleotide
           </button>
+          <h3>Click to modify Nucleus level:</h3>
+          <p>The nucleus is a unique cell structure of eukaryotic cells. The DNA inside the nucleus is complexed with various proteins and a small amount of mRNA to form chromatin. </p>
           <Element name="nucleus" initialValue={Nucleus_value} />
           <button onClick={() => setNucleusValue(Nucleus_value + 1)}>
             Increase Nucleus
@@ -154,6 +162,8 @@ function BuildPage() {
           <button onClick={() => setNucleusValue(Nucleus_value - 1)}>
             Decrease Nucleus
           </button>
+          <h3>Click to modify Mitochondria level:</h3>
+          <p>Mitochondria are the main site of cellular aerobic respiration.</p>
           <Element name="mitochondria" initialValue={mitochondria_value} />
           <button onClick={() => setmitochondriaValue(mitochondria_value + 1)}>
             Increase mitochondria
@@ -161,6 +171,8 @@ function BuildPage() {
           <button onClick={() => setmitochondriaValue(mitochondria_value - 1)}>
             Decrease mitochondria
           </button>
+          <h3>Click to modify Mitosis level:</h3>
+          <p>Mitosis is the mechanism for cells to reproduce, the two mitosis are asexual reproduction and sexual reproduction.</p>
           <Element name="mitosis" initialValue={mitosis_value} />
           <button onClick={() => setmitosisValue(mitosis_value + 1)}>
             Increase mitosis
@@ -168,13 +180,14 @@ function BuildPage() {
           <button onClick={() => setmitosisValue(mitosis_value - 1)}>
             Decrease mitosis
           </button>
+          <h3>Is this planet close to the sun?</h3>
           <Element
             name="Distance To The Sun"
             initialValue={Dist_value ? "Close" : "Far"}
           />
           <button onClick={() => setDistValue(true)}>Close</button>
           <button onClick={() => setDistValue(false)}>Far</button>
-
+          <h3>Does this planet have high gravity planet around?</h3>
           <Element
             name="High Gravity Planet Around"
             initialValue={Gravity_value ? "Yes" : "No"}
