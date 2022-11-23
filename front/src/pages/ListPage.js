@@ -3,13 +3,13 @@ import React from "react";
 import BasePage from "./BasePage.js";
 import List from "../components/List.js";
 import Builders from "../components/Builders.js";
-import MyImage from "../images/final.jpeg"
+import MyImage from "../images/final.jpeg";
 
 function ListPage() {
   return (
     <BasePage>
       <div>
-        <img src={MyImage} alt="example"/>
+        <img src={MyImage} alt="example" />
       </div>
       <div className="ListPage">
         <h1>Universes List (Check out your result with planets above!)</h1>
