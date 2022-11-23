@@ -9,9 +9,9 @@ function DonationPage() {
       <div className="IndexPage">
         <h1>Welcome to Stellaris!</h1>
         <div>
-          <p>
-            Hi John! You know what to do, go ahead!👇🏻
-          </p>
+          <h2>
+            Hi professor! You know what to do, go ahead!👇🏻
+          </h2>
         </div>
         <div>
           <img src={MyImage} alt="money" />
