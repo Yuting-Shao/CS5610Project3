@@ -29,8 +29,8 @@ async function handleBuild(
       name: Universe_name,
       builder: Builder_name,
       nucleus: Nucleus_value,
-      mitochondria:mitochondria_value,
-      mitosis:mitosis_value
+      mitochondria: mitochondria_value,
+      mitosis: mitosis_value,
     }),
   };
   fetch("/listings/record", requestOptions)
@@ -41,58 +41,55 @@ async function handleBuild(
 }
 
 async function handleUpdate(
-    N_value,
-    O_value,
-    Cell_value,
-    Dist_value,
-    Gravity_value,
-    Universe_name,
-    Builder_name,
-    Nucleus_value,
-    mitochondria_value,
-    mitosis_value
-  ) {
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        N: N_value,
-        O: O_value,
-        cell: Cell_value,
-        dist: Dist_value,
-        gravity: Gravity_value,
-        name: Universe_name,
-        builder: Builder_name,
-        nucleus: Nucleus_value,
-        mitochondria:mitochondria_value,
-        mitosis: mitosis_value
-      }),
-    };
-    fetch("/listings/update", requestOptions)
-      .then(async (response) => response.json())
-      .then((result) => {
-        console.log(result);
-      });
-  }
+  N_value,
+  O_value,
+  Cell_value,
+  Dist_value,
+  Gravity_value,
+  Universe_name,
+  Builder_name,
+  Nucleus_value,
+  mitochondria_value,
+  mitosis_value
+) {
+  const requestOptions = {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      N: N_value,
+      O: O_value,
+      cell: Cell_value,
+      dist: Dist_value,
+      gravity: Gravity_value,
+      name: Universe_name,
+      builder: Builder_name,
+      nucleus: Nucleus_value,
+      mitochondria: mitochondria_value,
+      mitosis: mitosis_value,
+    }),
+  };
+  fetch("/listings/update", requestOptions)
+    .then(async (response) => response.json())
+    .then((result) => {
+      console.log(result);
+    });
+}
 
-async function handleDelete(
-    Universe_name,
-    Builder_name
-  ) {
-    const requestOptions = {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: Universe_name,
-        builder:Builder_name
-      }),
-    };
-    fetch("/listings/delete", requestOptions)
-      .then(async (response) => response.json())
-      .then((result) => {
-        console.log(result);
-      });
-  }
+async function handleDelete(Universe_name, Builder_name) {
+  const requestOptions = {
+    method: "DELETE",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: Universe_name,
+      builder: Builder_name,
+    }),
+  };
+  fetch("/listings/delete", requestOptions)
+    .then(async (response) => response.json())
+    .then((result) => {
+      console.log(result);
+    });
+}
 
 function BuildPage() {
   const [N_value, setNValue] = useState(0);
@@ -116,7 +113,7 @@ function BuildPage() {
           </p>
         </div>
         <div>
-          <img src={MyImage} alt="me"/>
+          <img src={MyImage} alt="me" />
         </div>
         <div className="BuildForm">
           <form>
@@ -133,8 +130,12 @@ function BuildPage() {
           <button onClick={() => setNValue(N_value + 1)}>Increase CO2</button>
           <button onClick={() => setNValue(N_value - 1)}>Decrease CO2</button>
           <Element name="Amino Acid" initialValue={O_value} />
-          <button onClick={() => setOValue(O_value + 1)}>Increase Amino Acid</button>
-          <button onClick={() => setOValue(O_value - 1)}>Decrease Amino Acid</button>
+          <button onClick={() => setOValue(O_value + 1)}>
+            Increase Amino Acid
+          </button>
+          <button onClick={() => setOValue(O_value - 1)}>
+            Decrease Amino Acid
+          </button>
           <Element name="Nucleotide" initialValue={Cell_value} />
           <button onClick={() => setCellValue(Cell_value + 1)}>
             Increase Nucleotide
@@ -143,11 +144,19 @@ function BuildPage() {
             Decrease Nucleotide
           </button>
           <Element name="nucleus" initialValue={Nucleus_value} />
-          <button onClick={() => setNucleusValue(Nucleus_value + 1)}>Increase Nucleus</button>
-          <button onClick={() => setNucleusValue(Nucleus_value - 1)}>Decrease Nucleus</button>
+          <button onClick={() => setNucleusValue(Nucleus_value + 1)}>
+            Increase Nucleus
+          </button>
+          <button onClick={() => setNucleusValue(Nucleus_value - 1)}>
+            Decrease Nucleus
+          </button>
           <Element name="mitochondria" initialValue={mitochondria_value} />
-          <button onClick={() => setmitochondriaValue(mitochondria_value + 1)}>Increase mitochondria</button>
-          <button onClick={() => setmitochondriaValue(mitochondria_value - 1)}>Decrease mitochondria</button>
+          <button onClick={() => setmitochondriaValue(mitochondria_value + 1)}>
+            Increase mitochondria
+          </button>
+          <button onClick={() => setmitochondriaValue(mitochondria_value - 1)}>
+            Decrease mitochondria
+          </button>
           <Element name="mitosis" initialValue={mitosis_value} />
           <button onClick={() => setmitosisValue(mitosis_value + 1)}>
             Increase mitosis
@@ -201,30 +210,23 @@ function BuildPage() {
             <button
               onClick={() =>
                 handleUpdate(
-                    N_value,
-                    O_value,
-                    Cell_value,
-                    Dist_value,
-                    Gravity_value,
-                    Universe_name,
-                    Builder_name,
-                    Nucleus_value,
-                    mitochondria_value,
-                    mitosis_value
+                  N_value,
+                  O_value,
+                  Cell_value,
+                  Dist_value,
+                  Gravity_value,
+                  Universe_name,
+                  Builder_name,
+                  Nucleus_value,
+                  mitochondria_value,
+                  mitosis_value
                 )
               }
             >
               Update
             </button>
 
-            <button
-              onClick={() =>
-                handleDelete(
-                  Universe_name,
-                  Builder_name
-                )
-              }
-            >
+            <button onClick={() => handleDelete(Universe_name, Builder_name)}>
               Delete
             </button>
           </div>
