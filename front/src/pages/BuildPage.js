@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import BasePage from "./BasePage.js";
 import "./BuildPage.css";
 import Element from "../components/Element";
+import MyImage from "../images/me.jpeg";
 
 async function handleBuild(
   N_value,
@@ -113,6 +114,9 @@ function BuildPage() {
             Input the conditions you designed for your universe. Submit it and a
             universe will be created if the conditions are satisfied.
           </p>
+        </div>
+        <div>
+          <img src={MyImage} alt="me"/>
         </div>
         <div className="BuildForm">
           <form>
