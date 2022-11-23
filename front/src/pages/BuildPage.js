@@ -4,6 +4,7 @@ import BasePage from "./BasePage.js";
 import "./BuildPage.css";
 import Element from "../components/Element";
 import MyImage from "../images/me.jpeg";
+import MyMusic from "../music/P3BGM.m4a";
 
 async function handleBuild(
   N_value,
@@ -109,6 +110,9 @@ function BuildPage() {
     <BasePage>
       <div className="BuildPage">
         <h1>Build your universe!</h1>
+        <audio src={MyMusic} controls>
+          <p>If you are reading this, it is because your browser does not support the audio element.</p>
+        </audio>
         <div>
           <p>
             Input the conditions you designed for your universe. Submit it and a
