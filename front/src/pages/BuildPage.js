@@ -85,6 +85,9 @@ async function handleDelete(Universe_name, Builder_name) {
       builder: Builder_name,
     }),
   };
+  // I think a better way to structure the API might be /listing/:id.
+  // In REST API, the verb is already included in the HTTP method so
+  // you don't need to include it in the URI again.
   fetch("/listings/delete", requestOptions)
     .then(async (response) => response.json())
     .then((result) => {
@@ -120,6 +123,7 @@ function BuildPage() {
           </p>
         </div>
         <div>
+          // Good practice to always include alt for img.
           <img src={MyImage} alt="me" />
         </div>
         <div className="BuildForm">
@@ -227,6 +231,7 @@ function BuildPage() {
             <button
               onClick={() =>
                 handleBuild(
+                  // I'd keep the variable name case consistent. Use nValue, gravityValue, etc.
                   N_value,
                   O_value,
                   Cell_value,
