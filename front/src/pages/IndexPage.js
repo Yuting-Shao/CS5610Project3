@@ -10,12 +10,24 @@ function IndexPage() {
     <BasePage>
       <div className="IndexPage">
         <h1>Welcome to Stellaris!</h1>
-        <audio src={MyMusic} controls>
-          <p>
-            If you are reading this, it is because your browser does not support
-            the audio element.
-          </p>
-        </audio>
+        <div>
+          <audio src={MyMusic} controls>
+            <p>
+              If you are reading this, it is because your browser does not
+              support the audio element.
+            </p>
+          </audio>
+          <button type="button" className="btn btn-success">
+            <a className="page-link" href="/build">
+              Bulid Universe
+            </a>
+          </button>
+          <button type="button" className="btn btn-secondary">
+            <a className="page-link" href="/list">
+              Browse Universes
+            </a>
+          </button>
+        </div>
         <div>
           <p>
             In year 2077, human has explored all planets in Oort cloud. They

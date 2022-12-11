@@ -30,11 +30,11 @@ function NavBar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
 
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <img src={MyImage} class="logo" alt="logo" />
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <Link
                   className={`nav-link ${pathname === "/" ? "active" : ""}`}
                   aria-current="page"
@@ -45,7 +45,7 @@ function NavBar() {
               </li>
 
 
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <Link
                   className={`nav-link ${
                     pathname === "/build" ? "active" : ""
@@ -55,7 +55,7 @@ function NavBar() {
                   Build universe
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <Link
                   className={`nav-link ${
                     pathname === "/list" ? "active" : ""
@@ -65,7 +65,7 @@ function NavBar() {
                   Universes list
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <Link
                   className={`nav-link ${
                     pathname === "/donation" ? "active" : ""
@@ -75,7 +75,7 @@ function NavBar() {
                   Donation
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item nav-item-font">
                 <Link
                   className={`nav-link ${
                     pathname === "/about" ? "active" : ""

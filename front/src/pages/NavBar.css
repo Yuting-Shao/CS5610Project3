@@ -12,3 +12,13 @@
     background-repeat: no-repeat;
     padding: 0 !important;
 }
+
+.navbar-brand{
+    font-family: 'Rubik Spray Paint', cursive;
+    color: #0034AD;
+}
+
+.nav-item-font{
+    font-family: 'Roboto', sans-serif;
+    color: #0034AD;
+}
