@@ -78,7 +78,7 @@ function Builders() {
         />
       </label>
 
-      <ul>
+      <ul className="lists list-group">
         {Array.isArray(Builder)
           ? Builder.filter(
             (d) =>
@@ -86,7 +86,7 @@ function Builders() {
           )
             .slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
             .map((item) => (
-              <li key={item._id}>
+              <li className="list-group-item" key={item._id}>
                 {item.builder} has built {item.universe.length} unvierses, which
                 are listed as following: {item.universe.toString()}
               </li>
