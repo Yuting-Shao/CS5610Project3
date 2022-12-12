@@ -1,9 +1,14 @@
-# CS5610Project3
-100% finished on 11/22/2022.
+# CS5610Project4
 # Stellaris
+Project 4 Public deployment link: [https://stellaris4.herokuapp.com/](https://stellaris4.herokuapp.com/)
+
+Project 3 100% finished on 11/22/2022.
+
 Project3 release: [https://github.com/Yuting-Shao/CS5610Project3/releases/tag/project3](https://github.com/Yuting-Shao/CS5610Project3/releases/tag/project3)
 
-Public deployment link: [https://stellaris3.herokuapp.com/](https://stellaris3.herokuapp.com/)
+Project 3 Public deployment link: [https://stellaris3.herokuapp.com/](https://stellaris3.herokuapp.com/)
+
+
 
 Authors: [Yuting Shao](https://Yuting-Shao.github.io), [Zihan Xu](https://personal-web.hro1.repl.co/)
 ​
