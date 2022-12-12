@@ -10,6 +10,7 @@ import { MongoClient } from "mongodb";
 function MyMongoDB() {
   const myDB = {};
   const url =
+    // Please don't inlcude password in source code.
     process.env.ATLAS_URI ||
     "mongodb+srv://kelly:QUKGeA3kxOndEb62@cluster0.aknyknz.mongodb.net/?retryWrites=true&w=majority";
   const DB_NAME = "project3";
