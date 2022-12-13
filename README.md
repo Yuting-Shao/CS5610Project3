@@ -71,7 +71,7 @@ https://docs.google.com/presentation/d/1b5j4tGkUPVBaHM5SFqJBxhxNP5XsPNe54VpQO6yK
 
 
 ## Videos
-[Zihan Xu](https://www.youtube.com/watch?v=-DngOj8KNOg): https://www.youtube.com/watch?v=-DngOj8KNOg
+[Zihan Xu](https://youtu.be/_u6-m1I-IJY): https://youtu.be/_u6-m1I-IJY
 
 [Yuting Shao](https://youtu.be/7AV_L0FqmQI): https://youtu.be/7AV_L0FqmQI
 
