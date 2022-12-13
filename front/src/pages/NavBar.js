@@ -62,7 +62,7 @@ function NavBar() {
                   }`}
                   to="/list"
                 >
-                  Universes list
+                  Multiverse
                 </Link>
               </li>
               <li className="nav-item nav-item-font">

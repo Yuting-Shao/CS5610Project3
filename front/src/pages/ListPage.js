@@ -13,11 +13,11 @@ function ListPage() {
         <img src={MyImage} alt="example" />
       </div>
       <div className="ListPage">
-        <h2>Universes List (Check out your result with planets above!)</h2>
+        <h2>Planet List (Check out your result with planets or satellites above!)</h2>
         <List />
       </div>
       <div className="BuilderPage">
-        <h2>Builders List</h2>
+        <h2>God Among Us</h2>
         <Builders />
       </div>
     </BasePage>
