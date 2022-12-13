@@ -29,7 +29,7 @@ function IndexPage() {
           </button>
         </div>
         <div>
-          <p>
+          <p className="yellowtext">
             In year 2077, human has explored all planets in Oort cloud. They
             owned the technology to manage a global ecosystem of a just explored
             planet. United Nation wonder if we can simulate the operation result
