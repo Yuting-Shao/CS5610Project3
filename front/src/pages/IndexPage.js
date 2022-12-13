@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <BasePage>
       <div className="IndexPage">
-        <h1>Welcome to Stellaris!</h1>
+        <h1>🌏☄️✨Welcome to Stellaris!☀️⭐️🌛</h1>
         <div>
           <audio src={MyMusic} controls>
             <p>
@@ -29,6 +29,10 @@ function IndexPage() {
           </button>
         </div>
         <div>
+          <img src={MyImage2} alt="wave1" class="bottom-img" />
+        </div>
+      </div>
+      <div>
           <p className="yellowtext">
             In year 2077, human has explored all planets in Oort cloud. They
             owned the technology to manage a global ecosystem of a just explored
@@ -39,10 +43,6 @@ function IndexPage() {
             required functions from professor John.
           </p>
         </div>
-        <div>
-          <img src={MyImage2} alt="wave1" class="bottom-img" />
-        </div>
-      </div>
     </BasePage>
   );
 }
