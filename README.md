@@ -66,6 +66,10 @@ https://docs.google.com/document/d/1UrfzKYX_RX7uPp5tDl5UNgDZotgqc9ELaskE__9Kng8/
 ## [Project Slides](https://docs.google.com/presentation/d/e/2PACX-1vQ74RQ74XOvh9MkSVgxT38rJ2b-JhrREyQ2Legh-ZI901iHzRrPXoKQv_Mz9yrdf-5J3ZF_AJuYYoB_/pub?start=false&loop=true&delayms=10000&slide=id.g19d58c955c6_0_0)
 https://docs.google.com/presentation/d/e/2PACX-1vQ74RQ74XOvh9MkSVgxT38rJ2b-JhrREyQ2Legh-ZI901iHzRrPXoKQv_Mz9yrdf-5J3ZF_AJuYYoB_/pub?start=false&loop=true&delayms=10000&slide=id.g19d58c955c6_0_0
 
+## Usability Study Report
+[Usability Study Report](./screenshots/UsabilityStudyReport.pdf)
+
+
 ## Videos
 [Zihan Xu](https://www.youtube.com/watch?v=-DngOj8KNOg): https://www.youtube.com/watch?v=-DngOj8KNOg
 
