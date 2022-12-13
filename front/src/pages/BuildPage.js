@@ -106,7 +106,7 @@ function BuildPage() {
   return (
     <BasePage>
       <div className="BuildPage">
-        <h1>Build your universe!</h1>
+        <h1>☀️Build your universe!🔨</h1>
         <audio src={MyMusic} controls>
           <div className="alert alert-dark text" role="alert">
             If you are reading this, it is because your browser does not support

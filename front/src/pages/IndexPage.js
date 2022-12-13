@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <BasePage>
       <div className="IndexPage">
-        <h1>Welcome to Stellaris!</h1>
+        <h1>🌏☄️✨Welcome to Stellaris!☀️⭐️🌛</h1>
         <div>
           <audio src={MyMusic} controls>
             <p>
