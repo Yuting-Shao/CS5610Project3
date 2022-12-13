@@ -8,7 +8,10 @@ Project3 release: [https://github.com/Yuting-Shao/CS5610Project3/releases/tag/pr
 
 Project 3 Public deployment link: [https://stellaris3.herokuapp.com/](https://stellaris3.herokuapp.com/)
 
-
+## Improvement lists
+### Add google fonts and color palette to the web app
+#### Google fonts used
+**'[Roboto]'** is used for the body texts. **'Rubik Spray Paint'** is used for the head titles.
 
 Authors: [Yuting Shao](https://Yuting-Shao.github.io), [Zihan Xu](https://personal-web.hro1.repl.co/)
 ​
