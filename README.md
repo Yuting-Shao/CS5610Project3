@@ -63,8 +63,8 @@ In 2077, human has explored all planets in Oort cloud. They owned the technology
 ## [Design Document](./designDocument.pdf)
 https://docs.google.com/document/d/1UrfzKYX_RX7uPp5tDl5UNgDZotgqc9ELaskE__9Kng8/edit?usp=sharing
 
-## [Project Slides](https://docs.google.com/presentation/d/e/2PACX-1vQ74RQ74XOvh9MkSVgxT38rJ2b-JhrREyQ2Legh-ZI901iHzRrPXoKQv_Mz9yrdf-5J3ZF_AJuYYoB_/pub?start=false&loop=true&delayms=10000&slide=id.g19d58c955c6_0_0)
-https://docs.google.com/presentation/d/e/2PACX-1vQ74RQ74XOvh9MkSVgxT38rJ2b-JhrREyQ2Legh-ZI901iHzRrPXoKQv_Mz9yrdf-5J3ZF_AJuYYoB_/pub?start=false&loop=true&delayms=10000&slide=id.g19d58c955c6_0_0
+## [Project Slides]
+https://docs.google.com/presentation/d/1b5j4tGkUPVBaHM5SFqJBxhxNP5XsPNe54VpQO6yKC7I/edit?usp=sharing
 
 ## Usability Study Report
 [Usability Study Report](./screenshots/UsabilityStudyReport.pdf)
