@@ -12,7 +12,7 @@ import { myDB } from "../db/MyMongoDB.js";
 router.get("/listings", async function (req, res, next) {
   console.log("get data");
 
-  let universes;
+  let universes; // You can actually put this in the try block
 
   try {
     universes = await myDB.getUniverses();
@@ -75,8 +75,8 @@ router.post("/listings/record", async function (req, res, next) {
 
     Final: "",
   };
-  if (matchDocument.dist_value === false) {
-    if (matchDocument.gravity_value === true) {
+  if (!matchDocument.dist_value) {
+    if (matchDocument.gravity_value) {
       matchDocument.Final =
         "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
     } else {
@@ -84,7 +84,7 @@ router.post("/listings/record", async function (req, res, next) {
         "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
     }
   } else {
-    if (matchDocument.gravity_value === true) {
+    if (matchDocument.gravity_value) {
       matchDocument.Final =
         "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
     } else {
@@ -125,9 +125,11 @@ router.post("/listings/record", async function (req, res, next) {
     await myDB.insertUniverse(matchDocument);
     await myDB.insertBuilder(matchDocument2);
     console.log("Added a new element!");
+    // Should use 200 code?
     res.status(204).send();
   } catch (e) {
     console.log("Error in db", e);
+    // This should be a 500 error because it is a server side error.
     res.status(400).send("Error inserting one element!");
   }
 });
@@ -147,8 +149,8 @@ router.post("/listings/update", async function (req, res, next) {
     mitochondria_value: req.body.mitochondria,
     mitosis_value: req.body.mitosis,
   };
-  if (matchDocument.dist_value === false) {
-    if (matchDocument.gravity_value === true) {
+  if (!matchDocument.dist_value) {
+    if (matchDocument.gravity_value) {
       matchDocument.Final =
         "This satellite is like the moon, due to close distance to the sun, the gravitational force cooperated with self-rotation, triggered tide in surrounding planets' ancient ocean, which pushed the developmet of life.";
     } else {
@@ -156,7 +158,7 @@ router.post("/listings/update", async function (req, res, next) {
         "This frozen planet has high temperature difference between day and night, without energy resources, it can barely generate organic compounds.";
     }
   } else {
-    if (matchDocument.gravity_value === true) {
+    if (matchDocument.gravity_value) {
       matchDocument.Final =
         "This satellite has the energy to generate basic organic compounds such as Carbon Dioxide(CO2). At early stage of life development, these plays a role of catalyst.";
     } else {
