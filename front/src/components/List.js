@@ -1,4 +1,7 @@
 // This component is finished by Yuting Shao.
+// I see the corresponding page-item is not highlighted when clicking the next/prev button. I think you can just can a condition for each page-item
+// for example: className={ page === 1 ? "page-item active" : "page-item"}
+// And it's even better to get the real page size for the list to make it scalable.
 import "./List.css";
 import React, { useState, useEffect } from "react";
 
