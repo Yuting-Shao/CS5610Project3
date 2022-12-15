@@ -1,6 +1,7 @@
 // This component is finished by Yuting Shao.
 import React from "react";
 import "./Element.css";
+// The css file is empty and it's better to be organized by Modules.
 
 function Element({ name, initialValue }) {
   return (
@@ -14,3 +15,4 @@ function Element({ name, initialValue }) {
 }
 
 export default Element;
+// Missing Definition of PropTypes
