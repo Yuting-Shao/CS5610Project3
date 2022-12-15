@@ -1,4 +1,6 @@
 // This page is finished by Yuting Shao.
+// The div(mb-3 box) can be encapsulated as a new component to be reused.
+// It's better to give some response to use when clicking the build/update/delete button.
 import React, { useState } from "react";
 import BasePage from "./BasePage.js";
 import "./BuildPage.css";
