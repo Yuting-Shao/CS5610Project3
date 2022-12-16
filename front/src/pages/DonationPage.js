@@ -3,6 +3,8 @@ import React from "react";
 import BasePage from "./BasePage.js";
 import MyImage from "../images/gohead.jpeg";
 
+// The text is hard to read. I'd recommend adding a background or changing the color to white.
+
 function DonationPage() {
   return (
     <BasePage>

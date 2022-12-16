@@ -1,6 +1,5 @@
 // This component is finished by Yuting Shao.
 import React from "react";
-import "./Element.css";
 
 function Element({ name, initialValue }) {
   return (

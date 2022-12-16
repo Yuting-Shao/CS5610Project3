@@ -5,6 +5,11 @@ import MyImage2 from "../images/wave1.png";
 import "./IndexPage.css";
 import MyMusic from "../music/P3BGM.m4a";
 
+// It would be good to limit the width of the white image in
+// your css file so it doesn't extend beyond the edge of the page.
+
+// Adding margins to the left and right of the text would make it easier to read.
+
 function IndexPage() {
   return (
     <BasePage>
@@ -33,16 +38,16 @@ function IndexPage() {
         </div>
       </div>
       <div>
-          <p className="yellowtext">
-            In year 2077, human has explored all planets in Oort cloud. They
-            owned the technology to manage a global ecosystem of a just explored
-            planet. United Nation wonder if we can simulate the operation result
-            of exploiting a given planet. Therefore, they hired 79 years old
-            computer science masters Zihan and Yuting from Northeastern
-            University to design a simulator web with react, mongoDB and all
-            required functions from professor John.
-          </p>
-        </div>
+        <p className="yellowtext">
+          In year 2077, human has explored all planets in Oort cloud. They owned
+          the technology to manage a global ecosystem of a just explored planet.
+          United Nation wonder if we can simulate the operation result of
+          exploiting a given planet. Therefore, they hired 79 years old computer
+          science masters Zihan and Yuting from Northeastern University to
+          design a simulator web with react, mongoDB and all required functions
+          from professor John.
+        </p>
+      </div>
     </BasePage>
   );
 }

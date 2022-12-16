@@ -9,7 +9,8 @@ const router = express.Router();
 
 import { myDB } from "../db/MyMongoDB.js";
 
-router.get("/listings", async function (req, res, next) {
+// You can leave out the 'next' parameter if you won't be using it.
+router.get("/listings", async function (req, res) {
   console.log("get data");
 
   let universes;
@@ -28,7 +29,7 @@ router.get("/listings", async function (req, res, next) {
   }
 });
 
-router.get("/builders", async function (req, res, next) {
+router.get("/builders", async function (req, res) {
   console.log("get data builder");
 
   let builders;
@@ -47,7 +48,7 @@ router.get("/builders", async function (req, res, next) {
   }
 });
 
-router.post("/listings/record", async function (req, res, next) {
+router.post("/listings/record", async function (req, res) {
   console.log("post data");
   const matchDocument = {
     name: req.body.name,
@@ -132,7 +133,7 @@ router.post("/listings/record", async function (req, res, next) {
   }
 });
 
-router.post("/listings/update", async function (req, res, next) {
+router.post("/listings/update", async function (req, res) {
   console.log("update data");
   const matchDocument = {
     name: req.body.name,
@@ -199,7 +200,7 @@ router.post("/listings/update", async function (req, res, next) {
   }
 });
 
-router.delete("/listings/delete", async function (req, res, next) {
+router.delete("/listings/delete", async function (req, res) {
   console.log("delete data");
   const matchDocument = {
     name: req.body.name,
