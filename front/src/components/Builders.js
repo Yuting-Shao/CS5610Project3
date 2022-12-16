@@ -56,6 +56,8 @@ function Builders() {
               className="page-link"
               onClick={() =>
                 setPage(
+                  // If there aren't builders in the db, this ends up setting page as NaN (undefined / number === not a number)
+                  // Good idea for how to figure out which page to be on!
                   Math.min(page + 1, Math.floor(Builder.length / PAGE_SIZE))
                 )
               }
@@ -73,6 +75,7 @@ function Builders() {
           type="text"
           value={query}
           onChange={(evt) => {
+            // I like that you're searching as the user is typing!
             setQuery(evt.target.value);
           }}
         />
@@ -81,16 +84,16 @@ function Builders() {
       <ul className="lists list-group">
         {Array.isArray(Builder)
           ? Builder.filter(
-            (d) =>
-              d["builder"]?.toUpperCase().indexOf(query.toUpperCase()) !== -1
-          )
-            .slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
-            .map((item) => (
-              <li className="list-group-item" key={item._id}>
-                {item.builder} has built {item.universe.length} unvierses, which
-                are listed as following: {item.universe.toString()}
-              </li>
-            ))
+              (d) =>
+                d["builder"]?.toUpperCase().indexOf(query.toUpperCase()) !== -1
+            )
+              .slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE)
+              .map((item) => (
+                <li className="list-group-item" key={item._id}>
+                  {item.builder} has built {item.universe.length} unvierses,
+                  which are listed as following: {item.universe.toString()}
+                </li>
+              ))
           : null}
       </ul>
     </div>

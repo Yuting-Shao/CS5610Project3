@@ -1,3 +1,9 @@
+/*
+Colors (like those in your color palette) that will be reused on different pages can be defined
+as variables in another css file and then imported into the page css files as needed.
+Doing so would allow you to reference colors by name instead of hex number and would make your code clearer.
+*/
+
 .Footer {
     position: fixed;
     left: 0;

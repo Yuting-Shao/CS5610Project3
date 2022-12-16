@@ -4,8 +4,11 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import MyImage from "../images/black-hole.png";
-import "./NavBar.css"
+import "./NavBar.css";
 
+// I like the collapsable navbar.
+// It might be nice to make the navbar sticky like the footer.
+// Nice conditional rendering to mark the buttons as active or not.
 function NavBar() {
   const pathname = window.location.pathname;
   return (
@@ -13,7 +16,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-          Stellaris
+            Stellaris
           </Link>
           <button
             className="navbar-toggler"
@@ -28,10 +31,8 @@ function NavBar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
-
               <li className="nav-item nav-item-font">
-                <img src={MyImage} class="logo" alt="logo" />
+                <img src={MyImage} className="logo" alt="logo" />
               </li>
 
               <li className="nav-item nav-item-font">
@@ -43,7 +44,6 @@ function NavBar() {
                   Home
                 </Link>
               </li>
-
 
               <li className="nav-item nav-item-font">
                 <Link
@@ -57,9 +57,7 @@ function NavBar() {
               </li>
               <li className="nav-item nav-item-font">
                 <Link
-                  className={`nav-link ${
-                    pathname === "/list" ? "active" : ""
-                  }`}
+                  className={`nav-link ${pathname === "/list" ? "active" : ""}`}
                   to="/list"
                 >
                   Multiverse
@@ -96,4 +94,3 @@ function NavBar() {
 NavBar.propTypes = {};
 
 export default NavBar;
-
